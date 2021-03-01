@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mohamed Farah</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="rps.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!--For Recaptcha-->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						
+							<!--<span class="icon fa-gem"></span>-->
+							<img class= "logo" src="images/favicon.jfif" id="favicon" alt="favicon">
+						
+						<div class="content">
+							<div class="inner">
+								<h1>Hello 👋</h1>
+								<p>Welcome to my portfolio site. Feel free to look around.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#work">Portfolio</a></li>
+								<li><a href="#about">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Intro</h2>
+								<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span>-->
+								<!--<p>Ever since I was a teenager, I"ve been waiting for the day that I could deploy a site like the one you are viewing video now.</p>-->
+								<p>I am a person who enjoys making magic with code: be it front-end art, back-end engineering, or full-stack development. My passion lies in solving challenges, and the epiphany that comes from the moment when I solve them.</p>
+							</article>
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">Portfolio</h2>
+								<!--<span class="image main"><img src="images/pic02.jpg" alt="" /></span>-->
+	
+								<!--Debt Visualizer-->
+								<video class="video" controls>
+									<source src="images/debt_visualizer.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+									</video>
+								<h3>Debt Visualizer</h3> 
+								<p>A website that visualizes post-graduation debt for college students using ChartJS. The website won first place for the JP Morgan & Chase "Hack For Social Good" during CodeRED Voyage Hackathon 2020 amongst over 80 other participants. Feel free to checkout the Devpost article <a href="https://devpost.com/software/debt-visualizer">here</a>.</p>
+
+								<!--AWS Email Parser Bot-->
+								<video class="video" controls>
+								<source src="images/mail_parser.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<h3>Email Parser</h3> 
+								<p>A bot that automatically parses incoming emails for serial numbers and unique identifiers using AWS S3 and AWS Lambda, then stores the data in DynamoDB. The bot won second place in the 2021 Amazon Web Services (AWS) & HP Bot-A-Thon amongst more than 15 other teams.</p>
+
+								<!--Rock Paper Scissors-->
+									<h3>Rock Paper Scissors</h3> 
+									<p>A simple game built with HTML, CSS, and Javascript.</p>
+									
+								<div class="flex-box-rps" id="rps_frame">
+									<img src="rps_images/rock.png" alt="Rock" id="rock" class="item" onclick="rps_game(this)"> <!--Was making a mistake by not adding "this" into the parameter-->
+									<img src="rps_images/paper.png" alt="Paper" id="paper" class="item" onclick="rps_game(this)"> 
+									<img src="rps_images/scissors.png" alt="Scissors" id="scissors" class="item" onclick="rps_game(this)">
+								</div>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Resume</h2>
+								<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
+								<embed id="resume" src="images/Site_Resume.pdf"/>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Contact</h2>
+								<form method="post" action="mailto:mfarah@mfarah.me">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="4"></textarea>
+										</div>
+									</div>
+									<div class="g-recaptcha" data-sitekey="6Lf4bWwaAAAAAHOIbqbALOzpNKEhOIcd7CwobFJv"></div>
+								</br>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</form>
+								<ul class="icons">
+									<li><a href="http://www.linkedin.com/in/mohamed-farah-181495193/" target="_blank" class="icon brands fa-linkedin"><span class="label">Twitter</span></a></li>
+									<li><a href="https://github.com/MrRocketFingers" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyvideo">&copy; Mohamed Farah. Design: <a target="_blank" href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

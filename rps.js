@@ -13,12 +13,12 @@ function rps_game(user_choice) {
     if (results[0] > results[1]) {
         console.log(computer_choice);
         message = "You Won";
-    } else if (results[0] = results[1]) {
-        console.log(computer_choice);
-        message = "It's A Tie!";
-    } else {
+    } else if (results[0] < results[1]) {
         console.log(computer_choice);
         message = "You Lose";
+    } else {
+        console.log(computer_choice);
+        message = "It's A Tie!";
     }
 
     display_result(human_choice, computer_choice, message);
